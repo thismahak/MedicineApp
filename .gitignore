@@ -8,7 +8,7 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# === Frontend (React/Vite/Cra) ===
+# === Frontend (React/Vite/CRA) ===
 frontend/node_modules/
 frontend/.env
 frontend/.env.*.local
@@ -35,3 +35,6 @@ coverage/
 .pnp.js
 *.local
 *.env.local
+
+# === Prevent nested Git repos (e.g., accidental submodules) ===
+frontend/.git
