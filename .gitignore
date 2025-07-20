@@ -1,0 +1,37 @@
+# === Node.js (Backend) ===
+node_modules/
+.env
+.env.*.local
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# === Frontend (React/Vite/Cra) ===
+frontend/node_modules/
+frontend/.env
+frontend/.env.*.local
+frontend/build/
+frontend/dist/
+
+# === OS / IDE files ===
+.DS_Store
+Thumbs.db
+ehthumbs.db
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# === Test coverage ===
+coverage/
+
+# === Misc ===
+.pnpm-debug.log
+.pnp/
+.pnp.js
+*.local
+*.env.local
