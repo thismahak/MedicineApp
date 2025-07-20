@@ -7,7 +7,11 @@ const medicineRoutes = require('./routes/medicinesRoutes');
 dotenv.config();
 
 const app = express();
-app.use(cors());
+app.use(cors({
+  origin: process.env.CLIENT_URL || "http://localhost:3000",  // allow frontend
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  credentials: true
+}));
 app.use(express.json());
 
 // ✅ Use Mongo URI from .env
